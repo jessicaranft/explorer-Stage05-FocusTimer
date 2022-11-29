@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --main-color: #323238;
+  --selected-main-color: white;
+  --card-bg-color: #E1E1E6;
+  --selected-color: #02799D;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  color: var(--main-color);
+
+  display: grid;
+  min-height: 100vh;
+
+  padding: 5rem;
+}
+
+main {
+  display: flex;
+  gap: 15rem;
+
+  align-self: center;
+  justify-self: center;
+}
+
+#timer {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 8.8rem;
+
+  margin-bottom: 1.5rem;
+}
+
+#controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timer-wrapper {
+  align-self: center;
+  justify-self: center;
+}
+
+button {
+  border: none;
+  background: none;
+
+  cursor: pointer;
+}
+
+button svg {
+  width: 4rem;
+}
+
+.plus-minutes svg:active,
+.minus-minutes svg:active {
+  opacity: 0.5;
+}
+
+.clicked svg path {
+  fill: var(--selected-color);
+}
+
+.sounds-wrapper {
+  display: grid;
+  grid-template-columns: 13.8rem 13.8rem;
+  grid-row: auto auto;
+  grid-column-gap: 3.2rem;
+  grid-row-gap: 3.2rem;
+}
+
+.sound-forest,
+.sound-rain,
+.sound-cafeteria,
+.sound-fireplace {
+  display: flex;
+  background-color: var(--card-bg-color);
+  width: clamp(8rem, 8rem + 10vw, 13.8rem);
+  height: clamp(15rem, 5rem + 10vh, 15.2rem);
+
+  border-radius: 2.4rem;
+
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.sound-forest svg path,
+.sound-rain svg path,
+.sound-cafeteria svg path,
+.sound-fireplace svg path {
+  fill: var(--main-color);
+}
+
+.sound-on {
+  background-color: var(--selected-color);
+}
+
+.sound-on svg path {
+  fill: var(--selected-main-color);
+}
+
+@media (max-width: 425px){
+  body {
+    padding: 0.5rem;
+  }
+  
+  main {
+    display: grid;
+    gap: 4rem;
+  }
+
+  .sounds-wrapper {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .sound-forest,
+  .sound-rain,
+  .sound-cafeteria,
+  .sound-fireplace {
+    width: clamp(3rem, 5rem + 2vw, 7rem);
+    height: 8rem;
+  }
+
+  .sound-forest svg,
+  .sound-rain svg,
+  .sound-cafeteria svg,
+  .sound-fireplace svg {
+    width: 3rem;
+  }
+}
+
