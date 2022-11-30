@@ -14,7 +14,7 @@ const soundForest = new Audio("./assets/forest.wav")
 const soundRain = new Audio("./assets/rain.wav")
 const soundCafeteria = new Audio("./assets/cafeteria.wav")
 const soundFireplace = new Audio("./assets/fireplace.wav")
-const soundAlarm = new Audio("./assets/alarm.wav")
+const soundAlarm = new Audio("./assets/medium-bowl.mp3")
 
 export {
   btnPlay,
