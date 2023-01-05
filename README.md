@@ -1,41 +1,48 @@
-# Explorer - Stage 05: Desafio FocusTimer 2.0
+# Explorer - Stage 05: FocusTimer 2.0
 
-> Contador com músicas de fundo para estudo
+> A timer with background sounds
 
 ![preview](./.github/stage05-focustimer.png)
 
-Este é o primeiro desafio do Stage 05 do Explorer que mistura HTML, CSS e Javascript.
+This was the first challenge of Stage 05 from my Web Development course, using HTML, CSS, and JavaScript.
 
-Criei um contador para estudos com os seguintes recursos:
+### I created a timer for studying purposes, with the following features:
 
-- Botões com função de play e stop
-- Botões com a função de adicionar ou remover 5 minutos do contador
-- 4 opções de músicas de fundo
+- Buttons with play and pause functions
+- Buttons to add and remove 5 minutes from the timer
+- 4 background sounds options
 
-Opcionalmente, inseri um alarme que toca ao zerar o contador e programei o botão de stop para resetar o contador para o valor inicial.
+### I also added a few other extras features outside the challenge:
 
-O design do layout foi fornecido via Figma, e foi construído por mim com HTML e CSS.
+- An alarm sound when the counter gets to 0
+- The stop button sets thet timer value to its initial state
 
-É um layout responsivo que muda a estrutura ao passar de mobile para desktop e vice-versa.
+### Other details:
 
-[Clique aqui para testar](https://jessicaranft.github.io/explorer-Stage05-FocusTimer/)
+- The layout was based on a Figma design.
 
-Detalhamento dos principais elementos trabalhados em cada linguagem:
+- It's a responsive layout with different mobile and desktop versions.
 
-## CSS
-
-- Variáveis
-- Reponsividade com clamp() e @media
-- Grid e flex
-
-## Javascript
-
-- Funções
-- Controles para tocar e pausa contador e áudios
-- ES6 Modules
-- Factory e injeção de dependências
-- Eventos e callbacks
+- [Click here to view it live!](https://jessicaranft.github.io/explorer-Stage05-FocusTimer/)
 
 ---
 
-Software utilizado: Visual Studio Code
+Main elements used in each language:
+
+## CSS
+
+- Variables
+- Reponsivity with clamp() and @media
+- Grid and flex
+
+## Javascript
+
+- Functions
+- Play, pause and audio controls
+- ES6 Modules
+- Factory and dependency injection
+- Events and callbacks
+
+---
+
+Software: Visual Studio Code
